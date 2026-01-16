@@ -89,7 +89,7 @@ class WhileLoop {
         // }
         // System.out.println(fact);
 
-//  Find and print the product of all digits of a given number --> 
+//  Find and print the product of all digits of a given number -->  it took a little bit time 
         // int n = 111181, prod = 1;
         // while(n != 0) {
         //     int lastDigit = n % 10;
@@ -97,6 +97,58 @@ class WhileLoop {
         //     n /= 10;
         // }
         // System.out.println(prod);
+        
+//  Count and print the total number of digits in a given number --> it took a little bit time  
+        // int num = 841255;
+        // int i = 0;
+        // while(num !=0) {
+        //         num /= 10;//remove last digit
+        //         i++;
+        // }
+        // System.out.println(i);
+//  Reverse the given number and print the reversed value --> it took a little bit more time 
+//    int num = 12202;
+//    int ans = 0;
+//    while(num != 0) {
+//         int ld = num % 10;
+//         ans =  (ans * 10) + ld;
+//         num /= 10;
+//    }
+//    System.out.println(ans);
+//  Check whether the given number is a palindrome -->
+// method 1 ---> 
+//  int ogNum = 12521;
+//  int reverseNum = 0;
+//  int test = ogNum;
+//  while( test != 0) {
+//         int ld = test % 10;
+//         reverseNum = (reverseNum * 10) + ld;
+//         test /= 10;
+//  }
+//  if(ogNum == reverseNum) {
+//         System.out.println("Palindrome number ");
+//  } else {
+//         System.out.println("Not a Palindrome");
+//  }
+//  method 2 --> 
+ int ogNum = 12521;  // test =  1 2          new  = 125 jaha newnum > testnum waha ruk jao qki hum half num tak ka reverse kar chuke hai
+ int halfRev = 0;
+ int test = ogNum;
+ while( test > halfRev) {
+        int ld = test % 10;
+        halfRev = (halfRev * 10) + ld;
+        test /= 10;
+ }
+ System.out.println(halfRev);
+
+ if(test == halfRev || test == halfRev/10) {
+        System.out.println("Palindrome number ");
+ } else {
+        System.out.println("Not a Palindrome");
+ }
+
+
+
 
 //  ===============================================================
     }
@@ -105,9 +157,8 @@ class WhileLoop {
 
 
 
-//  Count and print the total number of digits in a given number
-//  Reverse the given number and print the reversed value
-//  Check whether the given number is a palindrome
+
+
 //  Find and print the sum of digits of the given number
 //  Check whether the given number is an Armstrong number
 //  Check whether the given number is a Perfect number
