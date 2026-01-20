@@ -131,21 +131,56 @@ class WhileLoop {
 //         System.out.println("Not a Palindrome");
 //  }
 //  method 2 --> 
- int ogNum = 12521;  // test =  1 2          new  = 125 jaha newnum > testnum waha ruk jao qki hum half num tak ka reverse kar chuke hai
- int halfRev = 0;
- int test = ogNum;
- while( test > halfRev) {
-        int ld = test % 10;
-        halfRev = (halfRev * 10) + ld;
-        test /= 10;
- }
- System.out.println(halfRev);
+//  int ogNum = 12521;  // test =  12          new  = 125 jaha newnum > testnum waha ruk jao qki hum half num tak ka reverse kar chuke hai
+//  int halfRev = 0;
+//  int test = ogNum;      
+//  while( test > halfRev) {
+//         int ld = test % 10;
+//         halfRev = (halfRev * 10) + ld;
+//         test /= 10;
+//  }
+//  System.out.println(halfRev);
 
- if(test == halfRev || test == halfRev/10) {
-        System.out.println("Palindrome number ");
- } else {
-        System.out.println("Not a Palindrome");
- }
+//  if(test == halfRev || test == halfRev/10) {
+//         System.out.println("Palindrome number ");
+//  } else {
+//         System.out.println("Not a Palindrome");
+//  }
+//  Find and print the sum of digits of the given number ----> 
+//  int nums = 11111;
+//  int sum = 0;
+//  while(nums != 0) {
+//         int ld = nums % 10;
+//         sum += ld;
+//         nums /= 10;
+//  }
+//  System.out.println(sum);
+//  Check whether the given number is an Armstrong number --> 
+int pow = 0;
+
+// int nums = 153;
+int nums = 1654;
+int test1 =  nums;
+int test2 =  nums;
+while ( test1 != 0) {
+        test1 /= 10;
+        pow++;
+      }
+int sum = 0;
+while (test2 != 0) {
+        int ld =  test2 % 10;
+        sum += Math.pow(ld, pow);
+        test2 /= 10;
+        
+}
+if(sum == nums) {
+        System.out.println("Armstrong Number!");
+} else {
+        System.out.println("not Armstrong Number!");
+}
+
+// System.out.println(pow);
+
 
 
 
@@ -159,8 +194,8 @@ class WhileLoop {
 
 
 
-//  Find and print the sum of digits of the given number
-//  Check whether the given number is an Armstrong number
+
+
 //  Check whether the given number is a Perfect number
 //  Print all prime numbers between 1 and 100
 //  Check whether the given number is a prime number
