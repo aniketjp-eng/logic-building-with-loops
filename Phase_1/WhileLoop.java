@@ -1,4 +1,8 @@
 // package Phase_1;
+
+import java.lang.invoke.MethodHandleInfo;
+import java.lang.reflect.Method;
+
 class WhileLoop {
     public static void main(String []args) {
 //  Print all numbers from 1 down to 10 using a loop -->
@@ -156,22 +160,39 @@ class WhileLoop {
 //  }
 //  System.out.println(sum);
 //  Check whether the given number is an Armstrong number --> 
-int pow = 0;
-
-// int nums = 153;
-int nums = 1654;
-int test1 =  nums;
-int test2 =  nums;
-while ( test1 != 0) {
-        test1 /= 10;
-        pow++;
-      }
-int sum = 0;
-while (test2 != 0) {
-        int ld =  test2 % 10;
-        sum += Math.pow(ld, pow);
-        test2 /= 10;
+// Method 1 ------------> 
+// int pow = 0;
+// // int nums = 153;
+// int nums = 1654;
+// int test1 =  nums;
+// int test2 =  nums;
+// while ( test1 != 0) {
+//         test1 /= 10;
+//         pow++;
+//       }
+// int sum = 0;
+// while (test2 != 0) {
+//         int ld =  test2 % 10;
+//         sum += Math.pow(ld, pow);
+//         test2 /= 10;
         
+// }
+// if(sum == nums) {
+//         System.out.println("Armstrong Number!");
+// } else {
+//         System.out.println("not Armstrong Number!");
+// } 
+// Method 2 ------------->
+int nums = 153;
+String str = "" + nums;
+System.out.println(str.length());
+int test =  nums;
+int sum = 0;
+int i = 0;
+while (i <= str.length()) {
+        int ld =  test % 10;
+        sum += Math.pow(ld, (str.length()));
+        test /= 10;
 }
 if(sum == nums) {
         System.out.println("Armstrong Number!");
@@ -179,7 +200,7 @@ if(sum == nums) {
         System.out.println("not Armstrong Number!");
 }
 
-// System.out.println(pow);
+
 
 
 
