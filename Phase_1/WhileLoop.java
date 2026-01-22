@@ -183,22 +183,40 @@ class WhileLoop {
 //         System.out.println("not Armstrong Number!");
 // } 
 // Method 2 ------------->
-int nums = 153;
-String str = "" + nums;
-System.out.println(str.length());
-int test =  nums;
-int sum = 0;
-int i = 0;
-while (i <= str.length()) {
-        int ld =  test % 10;
-        sum += Math.pow(ld, (str.length()));
-        test /= 10;
-}
-if(sum == nums) {
-        System.out.println("Armstrong Number!");
-} else {
-        System.out.println("not Armstrong Number!");
-}
+// int nums = 153;
+// String str = "" + nums;
+// System.out.println(str.length());
+// int test =  nums;
+// int sum = 0;
+// int i = 0;
+// while (i <= str.length()) {
+//         int ld =  test % 10;
+//         sum += Math.pow(ld, (str.length()));
+//         test /= 10;
+// }
+// if(sum == nums) {
+//         System.out.println("Armstrong Number!");
+// } else {
+//         System.out.println("not Armstrong Number!");
+// }
+// ---------------------------------------------------------------------
+
+//  Print the square of each number from 1 to n 
+// int n = 10;
+// for(int i = 1; i <= n; i++) {
+//         System.out.println(i*i);
+
+// }
+//  Print the cube of each number from 1 to n ---> 
+// int n = 10;
+// for(int i = 1; i <= n; i++) {
+//         System.out.println(i*i*i);
+
+// }
+//  Check whether the given number is a Perfect number --->
+// ---------------------------------------------------------------------
+//  Print all prime numbers between 1 and 100 --->
+// ------------------------------------------------------------------------
 
 
 
@@ -210,21 +228,10 @@ if(sum == nums) {
     }
 }
 
-
-
-
-
-
-
-
-//  Check whether the given number is a Perfect number
-//  Print all prime numbers between 1 and 100
 //  Check whether the given number is a prime number
 //  Print the Fibonacci series up to n terms
 //  Find and print the sum of the Fibonacci series up to n terms
-//  Print the square of each number from 1 to n
-//  Print the cube of each number from 1 to n
-//  Print all numbers between a and b that are divisible by 7
+// Print all numbers between a and b that are divisible by 7
 // Print all factors of the given number.
 // Find and print the sum of all factors of the given number.
 // Find the HCF (Highest Common Factor) of two given numbers.
