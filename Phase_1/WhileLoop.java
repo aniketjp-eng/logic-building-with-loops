@@ -226,27 +226,20 @@ class WhileLoop {
 // System.out.println("max = "+ max);
 // ---------------------------------------------------------
 // Find the smallest digit in the given number. ---> 
-int min = Integer.MAX_VALUE;
-int num = 94124;
-while(num != 0) {
-     int ld = num % 10;
-     if(ld < min) {
-        min = ld;
-     } 
-     num /=10;  
-}
-System.out.println("mix = "+ min);
+// int min = Integer.MAX_VALUE;
+// int num = 94124;
+// while(num != 0) {
+//      int ld = num % 10;
+//      if(ld < min) {
+//         min = ld;
+//      } 
+//      num /=10;  
+// }
+// System.out.println("mix = "+ min);
 //  Check whether the given number is a Perfect number --->
 // ---------------------------------------------------------------------
 //  Print all prime numbers between 1 and 100 --->
 // ------------------------------------------------------------------------
-
-
-
-
-
-
-
 //  ===============================================================
     }
 }
@@ -259,8 +252,5 @@ System.out.println("mix = "+ min);
 // Find and print the sum of all factors of the given number.
 // Find the HCF (Highest Common Factor) of two given numbers.
 // Find the LCM (Least Common Multiple) of two given numbers.
-// Find the smallest digit in the given number.
-
-        
 //     }
 // }
