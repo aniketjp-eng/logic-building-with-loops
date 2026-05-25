@@ -426,5 +426,118 @@ public class Main {
       //   }
       // }
    // Conclusion : almost 13 minutes still got confused between lower left part logic 
+//    ------------------------ 7th times -----------------------------
+// int n = 4;
+//  for(int r = 1; r <=n; r++){
+//     if(r <= n){
+//         for(int c = 1 ; c <=r; c++){
+//              System.out.println(
+//             "Upper Left Half -> r = " + r + ", c = " + c
+//         );
+
+//             if(c == 1 || c == r) {
+//                 System.out.print("*");
+//             } else {
+//                   System.out.print(" ");
+//             }
+//         }
+//         for(int c = 1; c <= n - r; c++){
+//              System.out.println(
+//             "Middle Spaces -> r = " + r + ", c = " + c
+//         );
+//             System.out.print(" ");
+//         }
+//         for(int c = 1; c <= n - r; c++){
+
+//         System.out.println(
+//             "Middle Spaces 2 -> r = " + r + ", c = " + c
+//         );
+//             System.out.print(" ");
+//         }
+//          for(int c = 1 ; c <=r; c++){
+//             System.out.println(
+//             "Upper Right Half -> r = " + r + ", c = " + c
+//         );
+//             if(c == 1 || c == r) {
+//                 System.out.print("*");
+//             } else {
+//                   System.out.print(" ");
+//             }
+//         }
+//         System.out.println();
+//     }
+//  }
+   
+// 3. Sandglass Pattern ===>
+// * * * * *
+//   * * * *
+//     * * *
+//       * *
+//         *
+//       * *
+//     * * *
+//   * * * *
+// * * * * *
+
+    // int n = 6;
+    // for(int r = 1; r < 2*n; r++){
+    //        if(r <= n){
+    //         for(int c = 1; c <= r-1; c++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int c = 1; c <= (n-r)+1; c++){
+    //             System.out.print("*");
+    //         }
+    //         System.out.println();
+    //        } else {
+    //          for(int c = 1; c <= (2*n-1)-r; c++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int c = 1; c <= (r-n)+1; c++){
+    //             System.out.print("*");
+    //         }
+    //         System.out.println();
+    //        }
+    // }
+// Conclusion : It took me just 5 minutes oin dry run and 1 minute for code 
+// ---------------------------------------------------------------------------------
+        // 4. Hourglass Pattern
+// * * * * *
+//  * * * *
+//   * * *
+//    * *
+//     *
+//    * *
+//   * * *
+//  * * * *
+// * * * * *
+    // int n = 8;
+    // for(int r = 1; r < 2*n; r++){
+    //        if(r <= n){
+    //         for(int c = 1; c <= r-1; c++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int c = 1; c <= (n-r)+1; c++){
+    //             System.out.print("* ");
+    //         }
+    //         System.out.println();
+    //        } else {
+    //          for(int c = 1; c <= (2*n-r)-1; c++){
+    //             System.out.print(" ");
+    //         }
+    //         for(int c = 1; c <= (r-n)+1; c++){
+    //             System.out.print("* ");
+    //         }
+    //         System.out.println();
+    //        }
+    // }
+  // Conclusion : It took me just 6-7 minutes oin dry run and 2 minute for code       
+//   -------------------------------------------------------------------------------
+// 5. Pascal Triangle
+//         1
+//       1   1
+//     1   2   1
+//   1   3   3   1
+
     }
 }
